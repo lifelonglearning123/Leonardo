@@ -8,12 +8,9 @@ import base64
 import re #Use regular expression
 #from dotenv import load_dotenv
 import os
-from st_paywall import add_auth
 
-#load_dotenv()  # Load environment variables from .env file
 openai_api_key = os.getenv('OPENAI_API_KEY')
 
-add_auth(required = True)
 
 def prompt_engine(prompt, task):
     tokens_used = 0 
