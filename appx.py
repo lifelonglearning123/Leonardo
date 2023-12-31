@@ -45,7 +45,7 @@ def generate_content(prompt, task, call_to_action):
     
     try:
         #creates in a range number of messages.
-        for _ in range(3): 
+        for _ in range(30): 
             content = ""
             for attempt in range(5):  # Limit the number of attempts
                 content = prompt_engine(prompt, task)
