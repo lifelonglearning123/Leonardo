@@ -71,7 +71,7 @@ def Social_Media_Generator():
         Making it easier to create 30 days worth of social media content
     """
     task="You are the world's best social media content creator for twitter. Use the AIDA framework in producing the tweets. Just provide the response and nothing else. Dont repeat the question again and don't give links and don't confirm using the aida framework. Create a twitter post based on the following ensuring it is under 220 characters in total"
-    company_name = st.text_area("What is the name of your company")
+    company_name = st.text_input("What is the name of your company")
     company_description = st.text_area("Please tell us more about your company.")
     Client_benefits = st.text_area("What benefits does your product/service offer to clients")
     Tone = st.text_area("What is the tone of your message? i.e., inspirational, sales pitch, funny, formal.")
